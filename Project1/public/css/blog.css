@@ -1,0 +1,113 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+
+    width: 0px;
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    opacity: .9;
+    padding-top: 25px;
+    transition: 0.4s;
+
+}
+
+.sidebar .close {
+    position: relative;
+    bottom: 30px;
+    right: 22px;
+}
+
+#content {
+    transition: margin-left 0.4s;
+    overflow: hidden;
+}
+
+.a {
+    color: black;
+}
+
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu a {
+    display:block;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    margin-left: 15px;
+}
+
+.mainmenu a:hover {
+    background-color: transparent;
+}
+
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+}
+
+.submenu a {
+    background-color: transparent;
+    margin-left: 35px;
+}
+
+.submenu a:hover {
+    color: grey;
+}
+
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.submenu input[type="checkbox"] {
+    margin-left: 15px;
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    transition: left 0.4s;
+}
+
+.btn .click {
+    left: 55px;
+}
+
+.btn span {
+    color: black;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.btn.click span:before {
+    content: '\f00d';
+}
+
+.sidebar.show {
+    left: 25px;
+
+}
+
+.search {
+    margin-right: 150px;
+}
+.card{
+    border-style:solid;
+    border-color:transparent;
+    cursor:pointer;
+}
+.card:hover{
+    opacity: 100%;
+    box-sizing: inherit;
+}
+

@@ -1,0 +1,22 @@
+
+.search_input {
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: groove;
+    outline: none;
+    width:400px;
+    margin-top:25px;
+    margin-left:15px;
+    font-size: 25px;
+    placeholder-color: #1A8D82
+}
+.title {
+    margin-top:12px;
+    margin-left:20px;
+}
+.close {
+    margin-top:20px;
+    margin-right:15px;
+}
+
